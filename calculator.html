@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+</head>
+<script>
+    function run() {
+        var nl = Number(document.getElementById("ray").value);
+        var ct = Number(document.getElementById("tay").value);
+        ;
+        let opt = document.getElementById("opt").value;
+        if (opt == "add") {
+            document.getElementById("result").innerHTML = add(nl,ct);
+
+        } else if (opt == "sub") {
+            document.getElementById("result").innerHTML = sub(nl,ct);
+        } else if (opt == "div") {
+            document.getElementById("result").innerHTML = div(nl,ct);
+        } else {
+            document.getElementById("result").innerHTML = mult(nl,ct);
+        }
+    }
+    function add(b1, b2) { return b1 + b2; }
+    function sub(b1, b2) { return b1 - b2; }
+    function mult(b1, b2) { return b1 * b2 }
+    function div(b1, b2) {
+        if (b1 == 0) {
+            document.getElementById("result").innerHTML = "error"
+        }
+        else {
+            return b1 / b2
+        }
+    }
+</script>
+
+<body>
+    <select name="operator" id="opt">
+        <option value="add">addition</option>
+        <option value="sub">subtraction</option>
+        <option value="div">division</option>
+        <option value="mult">multplication</option>
+
+    </select>
+    <div class="washy">
+        b1:<input type="text" id="ray">
+    </div>
+    <div class="washy">
+        b2:<input type="text" id="tay">
+    </div>
+    <span id="result">the answer is</span>
+    <button onclick="run()">submit</button>
+
+
+
+</body>
+
+</html>

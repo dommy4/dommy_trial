@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lavy {
+            width: 30%;
+            background-color: blue;
+            margin: 20px;
+            padding: 4px;
+        }
+
+        button {
+            width: 10%;
+            background-color: chartreuse;
+
+        }
+    </style>
+  </head>
+
+<body>
+    <div class="lavy" id="dommy">
+        <input type="text"  placeholder="user login" required>
+    </div>
+    <div class="lavy">curre.age
+        <input type="text" id="washy" placeholder="age" required>
+
+    </div>
+    <button onclick="tere()">okay</button>
+</body>
+<script>
+    function tere() {
+        var y = document.getElementById("washy").value;
+        if (y >= 18) {
+            alert("proceed to the next page");
+            document.getElementById("dommy").innerHTML = "adult";
+        }
+        else {
+            alert("OOPS!you dont meet the requirements");
+        }
+    }
+</script>
+
+</html>

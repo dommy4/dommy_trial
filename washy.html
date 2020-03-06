@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dat{
+        width: 20%;
+        background-color: chartreuse;
+    }
+</style>
+<script>
+
+    var y=document.getElementById("dommy").value;
+    
+    function munee () {
+        if (y>=10) {
+          alert("log in successful")  
+        
+        document.getElementById("dommy").innerHTML="ray";
+        
+    }else {
+        alert("reenter your password")
+        document.getElementById("dommy").innerHTML="ray";
+        
+    }} 
+        
+    
+</script>
+<body>
+    <div class="dat">
+        <span>click to enter the required details</span> <br>
+        <input type="password" id="dommy" placeholder="password" required>
+        <div class="dat">
+            <input type="text" id="saty" placeholder="name" required>
+        </div>
+    </div>
+    <button onclick="munee()" id="ray" >submit</button>
+</body>
+</html>

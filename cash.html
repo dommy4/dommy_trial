@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .washy{
+            width: 30%;
+            background-color: chocolate;
+            padding: 3px;
+            margin: 20px;
+        }
+        button{
+            width: 20%;
+            background-color: cornsilk;
+            height: 20px;
+        }
+    </style>
+    <script>
+        var el=Number(document.getElementById("way")).value;
+        document.getElementById("result").innerHTML="el===2000"
+        function wat(){
+            if (el>=2000) {
+                alert("your work positon has been moved to higher postion")
+             
+            }else{
+                alert("you have remained in the same pstion")
+            }
+        }
+    </script>
+</head>
+<body>
+    <span>welcome to my website</span>
+     <div class="washy" >
+         telephone:<input type="text" id="ray" placeholder="0723344" >
+     </div>
+    <div class="washy"  >
+         bothname: <input type="text" id="cray" placeholder="wanadai">
+     </div>
+     <div class="washy" > 
+         samount: <input type="text" id="way" placeholder="ksh2445">
+     </div>
+     <button onclick="wat()" id="result">submit</button>
+</body>
+</html>

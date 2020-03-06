@@ -1,0 +1,10 @@
+.register-form{
+    width: 50%;
+    background-size: auto;
+    height: 20%;
+    box-sizing: border-box;
+    background-color: darkblue;
+    outline: 1;
+    padding: 7;
+    margin: 0,0,15;
+}
